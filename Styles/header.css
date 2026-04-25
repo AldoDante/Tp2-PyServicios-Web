@@ -1,0 +1,37 @@
+.mi-header-personalizado {
+    background-color: #3b2f2f !important; 
+    padding: 10px 0;
+}
+
+/* Estilos del Logo */
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.logo-magical { color: white; }
+.logo-tours { color: green; margin-left: 5px; }
+
+/* Ajustes de los links en el menú */
+.navbar-dark .navbar-nav .nav-link {
+    color: white;
+    transition: 0.3s;
+    padding: 8px 15px;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+
+/* Estilo del submenú (Dropdown) */
+.dropdown-menu {
+    background-color: rgb(149, 143, 143);
+    border: none;
+}
+
+.dropdown-item:hover {
+    background-color: #555;
+    color: white;
+}
