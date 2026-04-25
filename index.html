@@ -6,8 +6,12 @@
     <title>Magical Tours</title>
     <link rel="icon" type="image/png" href="Images/cactus.png">
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="Styles/header.css">
     <link rel="stylesheet" href="Styles/footer.css">
+    <link rel="stylesheet" href="Styles/main_destinos.css">
+    <link rel="stylesheet" href="Styles/main_hero.css">
+    <link rel="stylesheet" href="Styles/main_testimonios.css">
 </head>
 <body>
      <header>
@@ -74,9 +78,110 @@
     </header>
     
     <main>
-        <h2>hola mundo!</h2>
-    </main>
+        <!--Seccion hero-->
+        <div class="container-fluid position-relative overflow-hidden p-0" style="height: 80vh;">
+            <div class="row m-0">
+                <div class="col p-0">
+                    <video class="position-absolute top-50 start-50 translate-middle min-vw-100 min-vh-100 object-fit-cover video-bg" 
+                        autoplay loop muted playsinline>
+                        <source src="video/video1.mp4" type="video/mp4">
+                    </video>
 
+                    <div class="hero-overlay-bootstrap"></div>
+
+                    <div class="container position-relative d-flex flex-column justify-content-center align-items-center text-center text-white content-layer" style="height: 80vh;">
+                        <h1 class="display-3 fw-bold animate-text">Explorá el Norte Argentino</h1>
+                        <p class="lead fs-4  fw-semibold animate-text-delay">Viví experiencias inolvidables en paisajes únicos.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Seccion destinos-->
+        <div class="destinos-section">
+            <div class="container">
+                <h2 class="text-center mb-4" id="title2">DESTINOS DESTACADOS</h2>
+                <div class="row g-4">
+                    <div class="col-md-4 ">
+                        <div class="card text-center">
+                            <img src="Images/img1.jpg" class="card-img-top rounded-4" alt="Paisaje de la Quebrada de Humahuaca">
+                            <div class="card-body">
+                                <h5 class="card-title">Quebrada de Humahuaca</h5>
+                                <p class="card-text">Un viaje a través de la historia y los colores del norte.</p>
+                                <a href="#" class="btn btn-custom">Explorar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card text-center">
+                            <img src="Images/img2.jpg" class="card-img-top rounded-4" alt="Salinas Grandes de Jujuy">
+                            <div class="card-body">
+                                <h5 class="card-title">Salinas Grandes</h5>
+                                <p class="card-text">Un destino blanco que parece de otro planeta</p>
+                                <a href="#" class="btn btn-custom">Explorar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card text-center">
+                            <img src="Images/img3.jpg" class="card-img-top rounded-4" alt="Cerro de los Siete Colores">
+                            <div class="card-body">
+                                <h5 class="card-title">Purmamarca</h5>
+                                <p class="card-text">El encanto del Cerro de los Siete Colores te espera.</p>
+                                <a href="#" class="btn btn-custom">Explorar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Contador animado-->
+                <div class="row mt-5 text-center">
+                    <div class="col">
+                        <div id="color_fondo"></div>
+                        <div id="numero">00</div>
+                        <p id="parrafo_contador">visitantes este mes</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Seccion testimonios-->
+        <div class="container">
+            <h2 class="section-title">LO QUE DICEN NUESTROS VIAJEROS</h2>
+            <div class="row">
+                <div class="col">
+                    <div id="carouselExampleIndicators" class="carousel slide">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner text-center">
+                            <div class="carousel-item active">
+                                <p>"La mejor experiencia de mi vida. Los paisajes de Jujuy son increíbles y la organización fue perfecta."</p>
+                                <p>- Juan Pérez, Buenos Aires</p>
+                            </div>
+                            <div class="carousel-item">
+                                <p>"Increíble atención en las agencias locales. El megamenú del sitio me ayudó a encontrar todo rápido."</p>
+                                <p>- María García, Catamarca</p>
+                            </div>
+                            <div class="carousel-item">
+                                <p>"Pude comparar y ver precios fácilmente."</p>
+                                <p>- Antivilo Dante, Salta</p>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
 
     <footer class="footer-brown py-5">
         <div class="container">
@@ -119,6 +224,9 @@
     </footer>
 
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-
+    <script src="https://code.jquery.com/jquery-4.0.0.min.js"></script>
+    <script src="js/contador.js"></script>
+    <script src="js/hero.js"></script>
 </body>
+
 </html>

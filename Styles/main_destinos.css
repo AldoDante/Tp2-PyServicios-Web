@@ -1,0 +1,109 @@
+:root {
+    --primary-brown: #5d4037; 
+    --accent-ochre: #bcaaa4;  
+    --bg-light: #efebe9;      
+    --white: #ffffff;
+    --transition: all 0.3s ease;
+}
+
+.destinos-section {
+    background-color: var(--bg-light);
+    padding: 20px 0; 
+}
+
+
+.destinos-section .container {
+    padding: 40px 20px;
+    background-color: #efebe9;
+    border-radius: 12px;
+}
+
+
+#title2{
+    color: var(--primary-brown);
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: 'Cinzel', serif;
+}
+
+/* Cards */
+.card {
+    border: none;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: var(--transition);
+    background-color: var(--white);
+}
+
+.card-text {
+    font-family: 'Lora', serif;
+    font-size: 1.1rem;
+    color: #6d4c41; 
+    line-height: 1.6; 
+    margin-bottom: 20px;
+}
+
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 25px rgba(93, 64, 55, 0.3);
+}
+
+/* Imagen */
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-title{
+    font-family: 'Cinzel', serif;
+    font-weight: bold;
+}
+
+
+/* Contenido */
+.card-body {
+    color: var(--primary-brown);
+}
+
+/* Botón */
+.btn-custom {
+    background-color: var(--primary-brown);
+    color: var(--white);
+    border-radius: 5px;
+    padding: 10px 20px;
+    transition: var(--transition);
+    text-decoration: none;
+}
+
+.btn-custom:hover {
+    background-color: #3e2723;
+    color: var(--white);
+}
+
+/* Contador */
+
+#numero {
+    font-family: 'Playfair Display', serif; 
+    font-size: 3rem;
+    font-weight: bold;
+    color: var(--primary-brown);
+}
+
+#parrafo_contador {
+    font-size: 1rem;
+    color: #2d2d2d;
+    text-transform: lowercase;
+    margin-top: -5px;
+}
+
+#color_fondo {
+    height: 0;
+    width: 100%;
+    background-color: var(--accent-ochre);
+    position: absolute;
+    z-index: -1;
+}
+
+
