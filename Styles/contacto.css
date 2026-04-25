@@ -1,0 +1,51 @@
+:root {
+    --color-fondo-beige: #f6f4f0; /* Fondo general de la foto */
+    --color-tierra-oscuro: #433125; /* Marrón del botón y título */
+    --color-tierra-hover: #2b1f17; /* Marrón más oscuro para hover */
+    --color-borde-input: #cccccc;
+}
+
+/* 1. Fondo general de la página */
+body {
+    background-color: var(--color-fondo-beige); 
+}
+
+/* 2. Estilo de la imagen lateral (Hornocal) */
+.imagen-lateral-contacto {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /*la imagen llena el espacio sin deformarse*/   
+    min-height: 450px;  /* En PC, forzamos una altura mínima para alinearla con el form */
+}
+
+.titulo-tierra {
+    color: var(--color-tierra-oscuro);
+}
+
+.btn-tierra {
+    background-color: var(--color-tierra-oscuro);
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+.btn-tierra:hover {
+    background-color: var(--color-tierra-hover);
+    color: #ffffff;
+}
+
+.btn-tierra:active {
+    transform: scale(0.98);/* Efecto visual de "pulsado" al hacer clic */
+}
+
+/* Color del borde cuando se hace clic en la caja */
+.form-floating > .form-control:focus {
+    border-color: var(--color-tierra-oscuro);
+    
+    box-shadow: 0 0 0 0.25rem rgba(67, 49, 37, 0.15);/*halo alrededor del input con el color tierra */
+}
+
+.form-control {
+    border-radius: 4px;/* Bordes de los inputs un poco más cuadrados*/
+}
