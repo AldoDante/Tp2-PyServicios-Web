@@ -1,0 +1,38 @@
+.footer-brown {
+    background-color: #3b2f2f;
+    color: #ffffff;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+}
+
+.icon-sprite {
+    display: inline-block;
+    width: 40px;   /* Tamaño del icono en tu web */
+    height: 40px;  /* Tamaño del icono en tu web */
+    
+    /* 1. Cargamos la imagen */
+    background-image: url('../Images/css_sprites.png'); 
+    background-repeat: no-repeat;
+    
+    /* 2. AJUSTE CLAVE: Decimos que el ancho total del sprite (los 3 iconos) 
+       sea de 120px (40px cada uno x 3 iconos) */
+    background-size: 120px 40px; 
+    
+    transition: transform 0.3s ease;
+}
+
+/* 3. Posiciones ajustadas al nuevo tamaño de 40px */
+.tiktok { 
+    background-position: 0 0; 
+}
+
+.facebook { 
+    background-position: -40px 0; /* Movemos exactamente el ancho de un icono */
+}
+
+.instagram { 
+    background-position: -80px 0; /* Movemos el ancho de dos iconos */
+}
