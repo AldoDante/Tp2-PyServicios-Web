@@ -1,11 +1,7 @@
 .footer-brown {
     background-color: #3b2f2f;
     color: #ffffff;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    width: 100%;
+
 }
 
 .icon-sprite {
