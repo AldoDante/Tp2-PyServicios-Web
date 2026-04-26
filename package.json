@@ -10,6 +10,16 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "bootstrap": "^5.3.8"
-  }
+    "bootstrap": "^5.3.8",
+    "jquery": "^4.0.0"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AldoDante/Tp2-PyServicios-Web.git"
+  },
+  "bugs": {
+    "url": "https://github.com/AldoDante/Tp2-PyServicios-Web/issues"
+  },
+  "homepage": "https://github.com/AldoDante/Tp2-PyServicios-Web#readme"
 }
