@@ -4,10 +4,16 @@
     --color-tierra-hover: #2b1f17; /* Marrón más oscuro para hover */
     --color-borde-input: #cccccc;
 }
-
-/* 1. Fondo general de la página */
+/* 1. Modificamos el body que ya tenías */
 body {
-    background-color: var(--color-fondo-beige); 
+    background-color: var(--color-fondo-beige);   
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Le obliga al body a medir AL MENOS el 100% de la pantalla */
+}
+
+main {
+    flex-grow: 1;/*empujando al footer hacia abajo" */
 }
 
 /* 2. Estilo de la imagen lateral (Hornocal) */
