@@ -1,0 +1,109 @@
+body {
+    background-color: #f4f4f4;
+}
+
+/* Header */
+.navbar-destinos {
+    background-color: #212529;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Botones filtro */
+.filtro-destino {
+    margin: 5px;
+}
+
+.filtro-destino.active {
+    border: 3px solid #000;
+}
+
+/* Card */
+.destino-card {
+    transition: transform 0.4s ease, opacity 0.5s ease;
+}
+
+.card-destino {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    height: 280px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.18);
+    cursor: pointer;
+}
+
+/* Imagen */
+.card-destino img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+/* Overlay */
+.overlay {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.45);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    opacity: 1;
+    padding: 20px;
+}
+
+.overlay h3 {
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+/* Zoom CSS */
+.card-destino:hover img {
+    transform: scale(1.12);
+}
+
+/* Zoom agregado con jQuery */
+.card-destino.zoom-activo img {
+    transform: scale(1.12);
+}
+
+/* Tabla */
+.contenedor-tabla {
+    background-color: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
+}
+
+/* Footer */
+.footer {
+    background-color: #212529;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.footer p {
+    margin: 0;
+}
+
+/* Responsive */
+@media (max-width: 576px) {
+    .filtro-destino {
+        width: 100%;
+        margin-bottom: 8px;
+    }
+
+    .card-destino {
+        height: 220px;
+    }
+
+    .overlay h3 {
+        font-size: 1.3rem;
+    }
+}

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destinos</title>
+
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../Styles/destinos.css">
+</head>
+
+<body>
+
+<header class="navbar-destinos">
+    navbar
+</header>
+
+<main class="container my-5">
+
+    <section class="text-center mb-5">
+        <h1 class="display-5 fw-bold">Destinos Turísticos</h1>
+        <p class="lead">Regiones y ciudades destacadas de Jujuy</p>
+    </section>
+
+    <!-- Filtros dinámicos -->
+    <section class="text-center mb-4">
+        <button class="btn btn-primary filtro-destino active" data-categoria="todos">Todos</button>
+        <button class="btn btn-success filtro-destino" data-categoria="regiones">Regiones</button>
+        <button class="btn btn-warning filtro-destino" data-categoria="ciudades">Ciudades</button>
+    </section>
+
+    <!-- Grid responsive -->
+    <section class="row g-4 galeria-grid">
+
+        <article class="col-12 col-md-6 col-lg-4 destino-card post-destino regiones">
+            <div class="card-destino">
+                <img src="../Images/yungas.jpg" alt="Yungas">
+                <div class="overlay">
+                    <h3>Yungas Selva Jujeña</h3>
+                </div>
+            </div>
+        </article>
+
+        <article class="col-12 col-md-6 col-lg-4 destino-card post-destino regiones">
+            <div class="card-destino">
+                <img src="../Images/puna.jpg" alt="Puna">
+                <div class="overlay">
+                    <h3>Puna Jujeña</h3>
+                </div>
+            </div>
+        </article>
+
+        <article class="col-12 col-md-6 col-lg-4 destino-card post-destino ciudades">
+            <div class="card-destino">
+                <img src="../Images/tilcara.jpg" alt="Tilcara">
+                <div class="overlay">
+                    <h3>Tilcara</h3>
+                </div>
+            </div>
+        </article>
+
+        <article class="col-12 col-md-6 col-lg-4 destino-card post-destino ciudades">
+            <div class="card-destino">
+                <img src="../Images/sanSalvador.jpg" alt="San Salvador">
+                <div class="overlay">
+                    <h3>San Salvador</h3>
+                </div>
+            </div>
+        </article>
+
+    </section>
+
+    <!-- Tabla responsive -->
+    <section class="contenedor-tabla mt-5">
+        <h2 class="text-center mb-4">Tarifas y Excursiones 2026</h2>
+
+        <div class="table-responsive">
+            <table class="table table-striped table-hover table-bordered align-middle">
+                <thead class="table-dark">
+                    <tr>
+                        <th>Destino</th>
+                        <th>Categoría</th>
+                        <th>Duración</th>
+                        <th>Precio (ARS)</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Yungas (Selva)</td>
+                        <td>Naturaleza</td>
+                        <td>Full Day</td>
+                        <td>$45.000</td>
+                    </tr>
+
+                    <tr>
+                        <td>Salinas Grandes</td>
+                        <td>Puna</td>
+                        <td>12 Horas</td>
+                        <td>$60.000</td>
+                    </tr>
+
+                    <tr>
+                        <td>Tilcara Histórico</td>
+                        <td>Cultural</td>
+                        <td>4 Horas</td>
+                        <td>$25.000</td>
+                    </tr>
+
+                    <tr>
+                        <td>San Salvador de Jujuy</td>
+                        <td>Ciudad</td>
+                        <td>6 Horas</td>
+                        <td>$30.000</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+</main>
+
+<footer class="footer">
+    <p>&copy; 2024 PyServicios Web. Todos los derechos reservados.</p>
+</footer>
+
+<script src="../node_modules/jquery/dist/jquery.min.js"></script>
+<script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="../js/destinos.js"></script>
+
+</body>
+</html>
