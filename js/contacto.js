@@ -77,5 +77,38 @@ $(document).ready(function() {
         
         }
     });
+    
+    //Punto 7 Módulo Educativo: Phishing
+    // 1. Atrapar el clic en el formulario del FOOTER
+    $('#formFooter').on('submit', function(e) {
+        e.preventDefault(); // Evitamos que la página se recargue
+      
+     
+
+        // Abrimos el modal trampa
+        $('#phishingModal').modal('show');
+    });
+
+    //Atrapar el intento de enviar la CONTRASEÑA en el Modal
+    $('#formPhishing').on('submit', function(e) {
+        e.preventDefault(); // ¡Bloqueamos el envío, cumpliendo con la consigna NO se permite robo de datos reales.
+
+        // Borramos el campo por seguridad
+        $('#fakePassword').val('');
+
+        // Ocultamos el modal y mostramos la leccion sobre phishing
+        $('#phishingTrampa').slideUp(300, function() {
+            $('#phishingFeedback').fadeIn(500);
+        });
+    });
+
+    // 3. Resetear el modal al cerrarlo
+    $('#phishingModal').on('hidden.bs.modal', function () {
+        $('#phishingTrampa').show();
+        $('#phishingFeedback').hide();
+        $('#formPhishing')[0].reset();
+        $('#formFooter')[0].reset(); // Limpiamos también el input del footer
+    });
 
 });
+
