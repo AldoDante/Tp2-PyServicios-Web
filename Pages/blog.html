@@ -7,11 +7,74 @@
 
     <link rel="stylesheet" href="../Styles/blog.css">
     <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
-    
+    <link rel="stylesheet" href="../Styles/header.css">
+    <link rel="stylesheet" href="../Styles/footer.css">
 </head>
     
 <body>
-    <header>navbar</header>
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark mi-header-personalizado">
+            <div class="container">
+                
+                <a class="navbar-brand logo" href="../index.html">
+                    <span class="logo-magical">Magical</span>
+                    <span class="logo-tours">Tours</span>
+                </a>
+
+                <!-- MENÚ hamburguesa solo aparece en dispositivos móviles -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- MENÚ -->
+                <div class="collapse navbar-collapse" id="menuPrincipal">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        
+                        <li class="nav-item">
+                            <a class="nav-link active" href="../index.html">Inicio</a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Destinos
+                            </a>
+                            <ul class="dropdown-menu">
+                                 <li><a class="dropdown-item" href="destinos.html">Nuestros Destinos</a></li>
+                                <li><a class="dropdown-item" href="https://www.turismo.jujuy.gob.ar/quebrada-2/" target="_blank">Quebrada de Humahuaca</a></li>
+                                <li><a class="dropdown-item" href="https://www.larutanatural.gob.ar/es/imperdible/82/salinas-grandes" target="_blank">Salinas Grandes</a></li>
+                                <li><a class="dropdown-item" href="https://www.larutanatural.gob.ar/es/imperdible/156/yungas-jujenas" target="_blank">Yungas</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Agencias
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="https://pakkarinviajes.com.ar/" target="_blank">Agencias Locales</a></li>
+                                <li><a class="dropdown-item" href="https://www.getyourguide.com/es-es/jujuy-l135137/tours-privados-tc221/" target="_blank">Tours Privados</a></li>
+                                <li><a class="dropdown-item" href="https://www.facebook.com/asociaciondeguiasdejujuy/" target="_blank">Guías Certificados</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="../Pages/precios.html">Precio</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="../Pages/contacto.html">Contacto</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="../Pages/blog.html">Blog</a>
+                        </li>
+
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+    </header>
     <main class="container my-5">
 
         <section class="text-center mb-5">
@@ -102,6 +165,40 @@
         </article>
     </section>
     </main>
+    <footer class="footer-brown py-5">
+        <div class="container">
+
+            <div class="row gy-4 align-items-center">
+                <div class="col-12 col-md-4 text-center text-md-start">
+                    <h5 class="text-center mb-3">Explora con Nosotros</h5>
+                    <div class="d-flex justify-content-center gap-3">
+                    <a href="https://www.tiktok.com" target="_blank" class="icon-sprite tiktok" title="TikTok"></a>
+                    <a href="https://www.facebook.com" target="_blank" class="icon-sprite facebook" title="Facebook"></a>
+                    <a href="https://www.instagram.com" target="_blank" class="icon-sprite instagram" title="Instagram"></a>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4">
+                    <h5 class="text-center mb-3">Mantenete al Dia!</h5>
+                    <p class="text-center mb-3">Inscribite y obtené un cupon de 15% OFF en tu Primera Compra</p>
+                    <form>
+                        <div class="mb-2">
+                            <input type="email" class="form-control form-control-sm" placeholder="Tu email" required>
+                        </div>
+                        <button type="submit" class="btn btn-outline-light w-100 btn-sm">Suscribirte</button>
+                    </form>
+                </div>
+
+                <div class="col-12 col-md-4 text-center">
+                    <h5 class="mb-3">Nuestra Base</h5>
+                    <div class="ratio ratio-21x9 shadow-sm" style="border-radius: 8px; overflow: hidden;">
+                        <iframe src="https://www.google.com/maps/embed?..." style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </footer>
 <!-- jQuery -->
  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 <script src="../node_modules/jquery/dist/jquery.min.js"></script>
