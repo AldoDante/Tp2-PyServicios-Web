@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="../Styles/header.css">
     <link rel="stylesheet" href="../Styles/footer.css">
-    <link rel="stylesheet" href="../Styles/precios.css">
+    <link rel="stylesheet" href="../Styles/agencias.css">
+    
 </head>
 <body>
      <header>
@@ -52,7 +53,7 @@
                                 Agencias
                             </a>
                             <ul class="dropdown-menu">
-                                 <li><a class="dropdown-item" href="../Pages/agencias.html">Nuestra Agencia</a></li>
+                                 <li><a class="dropdown-item" href="../Pages/agencias.html" >Nuestra Agencia</a></li>
                                 <li><a class="dropdown-item" href="https://pakkarinviajes.com.ar/" target="_blank">Agencias Locales</a></li>
                                 <li><a class="dropdown-item" href="https://www.getyourguide.com/es-es/jujuy-l135137/tours-privados-tc221/" target="_blank">Tours Privados</a></li>
                                 <li><a class="dropdown-item" href="https://www.facebook.com/asociaciondeguiasdejujuy/" target="_blank">Guías Certificados</a></li>
@@ -77,96 +78,70 @@
             </div>
         </nav>
     </header>
-    <main class="contenedor-precios">
-        <section class="intro-precios">
-            <h2 class="section-title">Comparador de Paquetes 2026</h2>
-            <p class="subtitle">Elegí la experiencia que mejor se adapte a vos</p>
-        </section>
+    <main class="contenedor-agencias">
+        <h2 class="section-title">Agencias Autorizadas</h2>
+        <p class="subtitle">Conocé a quienes harán tu viaje inolvidable</p>
 
-        <section class="tabla-comparativa">
-            <div class="table-responsive">
-                <table class="table table-hover align-middle">
-                    <thead>
-                        <tr>
-                            <th class="text-start">Servicios</th>
-                            <th>Plan Económico</th>
-                            <th>Plan Aventura</th>
-                            <th>Plan Premium (VIP)</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td class="servicio">Traslados In/Out</td>
-                            <td><i class="fas fa-times check">✔</i></td>
-                            <td><i class="fas fa-check check">✔</i></td>
-                            <td><i class="fas fa-check check">✔</i></td>
-                        </tr>
-                        <tr>
-                            <td class="servicio">
-                                Guía Certificado
-                                <span class="tooltip-icon" 
-                                    data-bs-toggle="tooltip" 
-                                    data-bs-placement="top" 
-                                    title="Guías bilingües registrados en Turismo Jujuy">
-                                    ⓘ
-                                </span>
-                            </td>
-                            <td><i class="fas fa-check check">✔</i></td>
-                            <td><i class="fas fa-check check">✔</i></td>
-                            <td><i class="fas fa-check check">✔</i></td>
-                        </tr>
-                        <tr>
-                            <td class="servicio">
-                                Equipamiento para Trekking
-                                <span 
-                                    class="tooltip-icon" 
-                                    data-bs-toggle="tooltip" 
-                                    data-bs-placement="top" 
-                                    title="Incluye bastones, cascos y capas de lluvia">
-                                    ⓘ
-                                </span>
-                            </td>
-                            <td><i class="fas fa-times cross">✘</i></td>
-                            <td><i class="fas fa-times cross">✘</i></td>
-                            <td><i class="fas fa-check check">✔</i></td>
-                        </tr>
-                        <tr>
-                            <td class="servicio">
-                                Acceso Ilimitado
-                                <span 
-                                    class="tooltip-icon" 
-                                    data-bs-toggle="tooltip" 
-                                    data-bs-placement="top" 
-                                    title="Entrada libre a todos los museos y parques nacionales">
-                                    ⓘ
-                                </span>
-                            </td>
-                            <td><i class="fas fa-times cross">✘</i></td>
-                            <td><i class="fas fa-times cross">✘</i></td>
-                            <td><i class="fas fa-check check">✔</i></td>
-                        </tr>
-                        <tr>
-                            <td class="servicio">Almuerzo Regional</td>
-                            <td><i class="fas fa-times cross">✘</i></td>
-                            <td><i class="fas fa-check check">✔</i></td>
-                            <td><i class="fas fa-check check">✔</i></td>
-                        </tr>
-                        <tr class="no-hover"> 
-                            <td class="text-start fw-bold">Precio Final</td>
-                            <td class="fw-bold">$25.000</td>
-                            <td class="fw-bold">$55.000</td>
-                            <td class="fw-bold">$90.000</td>
-                        </tr>
-                        <tr class="no-hover fila-botones">
-                            <td></td>
-                            <td><a href="#" class="btn-table">Elegir</a></td>
-                            <td><a href="#" class="btn-table">Elegir</a></td>
-                            <td><a href="#" class="btn-table best-seller">Elegir VIP</a></td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </section>
+        <div class="agencias-grid">
+            
+            <article class="agency-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="../Images/agencia1.jpg" alt="Agencia Quebrada">
+                        <div class="front-info">
+                            <h3>Quebrada Viajes</h3>
+                            <p>Especialistas en Humahuaca</p>
+                        </div>
+                    </div>
+                    <div class="flip-card-back">
+                        <h3>Detalles de Contacto</h3>
+                        <p><i class="fas fa-map-marker-alt"></i> Tilcara, Jujuy</p>
+                        <p><i class="fas fa-phone"></i> +54 388 123456</p>
+                        
+                        <div class="rating-container">
+                            <p>Calificación:</p>
+                            <div class="stars">
+                                <input type="radio" id="a1-star5" name="rating1" value="5"><label for="a1-star5">★</label>
+                                <input type="radio" id="a1-star4" name="rating1" value="4"><label for="a1-star4">★</label>
+                                <input type="radio" id="a1-star3" name="rating1" value="3" checked><label for="a1-star3">★</label>
+                                <input type="radio" id="a1-star2" name="rating1" value="2"><label for="a1-star2">★</label>
+                                <input type="radio" id="a1-star1" name="rating1" value="1"><label for="a1-star1">★</label>
+                            </div>
+                        </div>
+                            <a href="https://sustentravel.tur.ar/product/puna-jujuy-ruta-40-sp/?srsltid=AfmBOopPfBK9-jg5InxZ9FgOx3PRrvF4GFBJtA6iEknp1K2Yg0m2n18Z" class="btn-card" target="_blank">Ver Perfil</a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="agency-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="../Images/agencia2.jpg" alt="Puna Tours">
+                        <div class="front-info">
+                            <h3>Puna Tours</h3>
+                            <p>Expertos en Salinas Grandes</p>
+                        </div>
+                    </div>
+                    <div class="flip-card-back">
+                        <h3>Detalles de Contacto</h3>
+                        <p><i class="fas fa-map-marker-alt"></i> San Salvador de Jujuy</p>
+                        <p><i class="fas fa-phone"></i> +54 388 654321</p>
+                        <div class="rating-container">
+                            <p>Calificación:</p>
+                            <div class="stars">
+                                <input type="radio" id="a2-star5" name="rating2" value="5" checked><label for="a2-star5">★</label>
+                                <input type="radio" id="a2-star4" name="rating2" value="4"><label for="a2-star4">★</label>
+                                <input type="radio" id="a2-star3" name="rating2" value="3"><label for="a2-star3">★</label>
+                                <input type="radio" id="a2-star2" name="rating2" value="2"><label for="a2-star2">★</label>
+                                <input type="radio" id="a2-star1" name="rating2" value="1"><label for="a2-star1">★</label>
+                            </div>
+                        </div>
+                        <a href="https://sustentravel.tur.ar/product/puna-jujuy-ruta-40-sp/?srsltid=AfmBOopPfBK9-jg5InxZ9FgOx3PRrvF4GFBJtA6iEknp1K2Yg0m2n18Z" class="btn-card" target="_blank">Ver Perfil</a>
+                    </div>
+                </div>
+            </article>
+
+        </div>
     </main>
 <footer class="footer-brown py-5">
         <div class="container">
@@ -206,7 +181,8 @@
    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     
     <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="../js/precios.js"></script>
+    <script src="../js/agencias.js"></script>
+    
 </body>
 
 </html>
