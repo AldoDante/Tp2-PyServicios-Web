@@ -35,3 +35,22 @@
     background-color: #555;
     color: white;
 }
+/* ocultar menú en mobile */
+#menuPrincipal {
+    display: none;
+}
+
+/* mostrar cuando está activo */
+.menu-abierto {
+    display: block !important;
+}
+
+/* dropdown oculto */
+.dropdown-menu {
+    display: none;
+}
+
+/* dropdown visible */
+.dropdown-menu.show {
+    display: block;
+}
