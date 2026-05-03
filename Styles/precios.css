@@ -1,5 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
+body {       
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Le obliga al body a medir AL MENOS el 100% de la pantalla */
+}
+
+main {
+    flex-grow: 1;/*empujando al footer hacia abajo" */
+}
+
 /* Contenedor principal */
 .contenedor-precios {
     padding: 60px 15px;
