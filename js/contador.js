@@ -2,7 +2,7 @@ $(function(){
     let cuenta = 0;
     const maximo = 500;
      
-    const velocidad = 100; 
+    const velocidad = 2500; 
 
     const cronometro = setInterval(function() {
         cuenta++;
